@@ -1,3 +1,7 @@
+<script setup>
+import Events from '../components/Events.vue'
+</script>
+
 <template>
-  <h1>Upcoming Events</h1>
+  <Events />
 </template>

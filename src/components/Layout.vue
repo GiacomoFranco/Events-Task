@@ -9,15 +9,19 @@ import EventsOverview from './EventsOverview.vue'
     <Header />
   </header>
   <main>
-    <EventsOverview />
-    <slot />
+    <section class="overview">
+      <EventsOverview />
+    </section>
+    <section class="content">
+      <slot />
+    </section>
   </main>
   <footer>
     <Footer />
   </footer>
 </template>
 
-<style>
+<style lang="scss">
 header {
   height: 7.2rem;
   box-shadow: 4px 0px 12px 0px #60606033;
@@ -26,8 +30,19 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
   flex-grow: 1;
   padding: 3.2rem;
+  background-color: var(--m-background);
+
+  section.overview {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
 }
 
 footer {
