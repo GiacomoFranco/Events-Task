@@ -9,11 +9,16 @@
 
 <style lang="scss">
 a {
+  display: inline-block;
   border-bottom: 1px solid var(--l-gray);
-  min-width: 11.1rem;
+  padding: 0 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
 
   &.active {
     border-bottom: 3px solid var(--m-blue);
+    z-index: 1;
+    position: relative;
   }
 }
 </style>

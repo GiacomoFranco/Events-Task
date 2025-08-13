@@ -1,12 +1,12 @@
 <template>
-  <div class="empty-list">
+  <div class="empty-list__content">
     <h2 class="empty-list__title">No upcoming events</h2>
     <p>Stay tuned! New events will show up here as they're announced. Keep an eye out for opportunities to connect,
       share, and grow.</p>
   </div>
 </template>
 <style lang="scss">
-.empty-list {
+.empty-list__content {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;

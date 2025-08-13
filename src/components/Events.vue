@@ -5,26 +5,39 @@ import EventsMock from '../mocks/mock-data.json';
 import { filterByTab } from '@/utils/filter';
 
 const props = defineProps(['filter']);
+const filteredEvents = filterByTab(props.filter, EventsMock.events);
 </script>
 
 <template>
-  <div class="events">
-    <template v-if="EventsMock && EventsMock.events.length">
-      <EventCard v-for="event in filterByTab(filter, EventsMock.events)" :event="event" />
-    </template>
-    <template v-else>
+  <template v-if="filteredEvents && filteredEvents.length">
+    <div class="crowded-list">
+      <EventCard v-for="event in filteredEvents" :event="event" />
+    </div>
+  </template>
+  <template v-else>
+    <div class="empty-list">
       <EmptyList />
-    </template>
-  </div>
+    </div>
+  </template>
 </template>
 
 <style lang="scss">
-.events {
-  display: flex;
-  flex-wrap: wrap;
+.crowded-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32.6rem, 1fr));
   gap: 2.4rem;
-  flex-grow: 1;
+}
+
+.empty-list {
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 440px) {
+  .crowded-list {
+    grid-template-columns: repeat(auto-fit, minmax(22.6rem, 1fr));
+  }
 }
 </style>

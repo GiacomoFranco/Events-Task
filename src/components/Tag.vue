@@ -10,5 +10,9 @@ const props = defineProps(['tag'])
   color: var(--m-gray);
   padding: 0 1.2rem;
   border-radius: .4rem;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
 }
 </style>

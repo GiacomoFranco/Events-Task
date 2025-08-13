@@ -28,7 +28,6 @@ const props = defineProps(['event']);
 <style lang="scss">
 .event-card {
   background-color: var(--m-white);
-  max-width: 37.6rem;
   flex-basis: 32.6rem;
   flex-grow: 1;
   padding: 1.2rem;
@@ -71,6 +70,14 @@ const props = defineProps(['event']);
   &__tags {
     display: flex;
     gap: .8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .event-card {
+    &__tags {
+      flex-wrap: wrap;
+    }
   }
 }
 </style>

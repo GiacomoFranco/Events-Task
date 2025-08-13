@@ -58,4 +58,15 @@ footer {
   padding: 2rem 0;
   background-color: var(--s-background);
 }
+
+@media (max-width: 700px) {
+  main {
+    padding: 3.2rem 1rem;
+  }
+
+  header {
+    padding: .8rem 1rem;
+  }
+
+}
 </style>
