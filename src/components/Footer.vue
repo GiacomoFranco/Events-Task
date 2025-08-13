@@ -1,3 +1,3 @@
 <template>
-  <img src="/src/assets/social-currant-logo.svg" alt="">
+  <img src="/src/assets/icons/social-currant-logo.svg" alt="">
 </template>

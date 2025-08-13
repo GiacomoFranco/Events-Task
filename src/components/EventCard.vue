@@ -1,23 +1,26 @@
 <script setup>
 import Tag from './Tag.vue'
+import { getImageName, formateDate, formateHour } from '@/utils';
+
+const props = defineProps(['event']);
 </script>
 
 <template>
   <article class="event-card">
     <div class="event-card__content">
       <div class="event-card__content__image">
-        <img src="/src/assets/card-image-ref.png" alt="">
+        <img :src="event.image_url" :alt="getImageName(event.image_url)">
       </div>
       <div class="event-card__content__info">
-        <span>June 25, 2025</span>
-        <span>3:00 PM</span>
+        <span>{{ formateDate(event.start_time) }}</span>
+        <span>{{ formateHour(event.start_time) }}</span>
       </div>
       <div class="event-card__content__title">
-        <p><strong>Creator Briefing: Best Practices for Video Editing</strong></p>
+        <p><strong>{{ event.title }}</strong></p>
       </div>
     </div>
     <div class="event-card__tags">
-      <Tag v-for="value in [1, 2]" />
+      <Tag v-for="tag in event.tags" :tag="tag" />
     </div>
   </article>
 </template>

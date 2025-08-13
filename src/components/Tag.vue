@@ -1,5 +1,8 @@
+<script setup>
+const props = defineProps(['tag'])
+</script>
 <template>
-  <span class="tag">Immigration</span>
+  <span class="tag">{{ tag }}</span>
 </template>
 <style>
 .tag {

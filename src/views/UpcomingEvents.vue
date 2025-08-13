@@ -3,5 +3,5 @@ import Events from '../components/Events.vue'
 </script>
 
 <template>
-  <Events />
+  <Events filter="upcoming" />
 </template>

@@ -1,17 +1,30 @@
 <script setup>
 import EventCard from './EventCard.vue';
+import EmptyList from './EmptyList.vue';
+import EventsMock from '../mocks/mock-data.json';
+import { filterByTab } from '@/utils/filter';
+
+const props = defineProps(['filter']);
 </script>
 
 <template>
   <div class="events">
-    <EventCard v-for="value in [1, 2, 3, 4, 1, 2, 3, 4]" />
+    <template v-if="EventsMock && EventsMock.events.length">
+      <EventCard v-for="event in filterByTab(filter, EventsMock.events)" :event="event" />
+    </template>
+    <template v-else>
+      <EmptyList />
+    </template>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .events {
   display: flex;
   flex-wrap: wrap;
   gap: 2.4rem;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
 }
 </style>

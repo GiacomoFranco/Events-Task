@@ -1,3 +1,6 @@
+<script setup>
+import Events from '../components/Events.vue';
+</script>
 <template>
-  <h1>My Events</h1>
+  <Events filter="mine" />
 </template>

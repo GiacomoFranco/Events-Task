@@ -4,7 +4,12 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: { name: 'Upcoming' },
+      redirect: { name: 'All Events' },
+    },
+    {
+      path: '/all',
+      name: 'All Events',
+      component: () => import('../views/AllEvents.vue'),
     },
     {
       path: '/upcoming',
