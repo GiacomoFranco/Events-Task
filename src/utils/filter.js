@@ -4,7 +4,7 @@ export function filterByTab(tab, events) {
   return events.filter((event) => {
     if (tab === 'upcoming') return isUpcoming(event.start_time)
     if (tab === 'past') return isPast(event.start_time)
-    if (tab === 'mine') return event.start_time
+    if (tab === 'mine') return false
     return true
   })
 }
