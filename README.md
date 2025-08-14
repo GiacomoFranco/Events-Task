@@ -16,6 +16,18 @@ This application was deployed using Netlify for fast, reliable, and globally dis
 You can access the live version here:
 [Deployed App](https://eventstasksocialcurrant.netlify.app/)
 
+## 🧪 Lighthouse report
+
+[Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) audits performance, accessibility, SEO, and best practices, providing scores and improvement tips.
+
+![Lighthouse report](https://raw.githubusercontent.com/GiacomoFranco/Events-Task/refs/heads/main/src/assets/images/lighthouse.png)
+
+## ♿ WAVE report (WCAG)
+
+[WAVE tool](https://wave.webaim.org/) checks accessibility compliance with WCAG, flagging issues like contrast, alt text, and ARIA attributes.
+
+![Wave report](https://raw.githubusercontent.com/GiacomoFranco/Events-Task/refs/heads/main/src/assets/images/WAVE.png)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
