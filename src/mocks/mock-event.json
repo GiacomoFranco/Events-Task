@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "title": "Sustainable Storytelling Workshop",
+  "start_time": "2025-08-12T16:00:00Z",
+  "tags": ["Workshop", "Climate", "Virtual"],
+  "image_url": "/src/assets/images/discussion.webp",
+  "location": "Online",
+  "organizer": "Green Narrative",
+  "short_summary": "Learn how to craft compelling narratives around environmental impact.",
+  "is_featured": true,
+  "category": "Education"
+}

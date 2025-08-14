@@ -9,14 +9,14 @@ const props = defineProps(['event']);
   <article class="event-card">
     <div class="event-card__content">
       <div class="event-card__content__image">
-        <img :src="event.image_url" :alt="getImageName(event.image_url)">
+        <img class="event-image" :src="event.image_url" :alt="getImageName(event.image_url)">
       </div>
       <div class="event-card__content__info">
-        <span>{{ formateDate(event.start_time) }}</span>
-        <span>{{ formateHour(event.start_time) }}</span>
+        <span class="event-date">{{ formateDate(event.start_time) }}</span>
+        <span class="event-hour">{{ formateHour(event.start_time) }}</span>
       </div>
       <div class="event-card__content__title">
-        <p><strong>{{ event.title }}</strong></p>
+        <p class="event-title"><strong>{{ event.title }}</strong></p>
       </div>
     </div>
     <div class="event-card__tags">
