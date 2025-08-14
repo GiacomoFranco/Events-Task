@@ -10,6 +10,12 @@ The application is structured into modular components to separate concerns, maki
 
 Additionally, the project includes an example of a unit test, demonstrating the testing approach and ensuring core functionality is verified.
 
+## 🚀 Deployed app
+
+This application was deployed using Netlify for fast, reliable, and globally distributed hosting.
+You can access the live version here:
+[Deployed App](https://eventstasksocialcurrant.netlify.app/)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
