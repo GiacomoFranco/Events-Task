@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <RouterLink to="/all" activeClass="active">All</RouterLink>
+    <RouterLink to="/" activeClass="active">All</RouterLink>
     <RouterLink to="/upcoming" activeClass="active">Upcoming</RouterLink>
     <RouterLink to="/past-events" activeClass="active">Past Events</RouterLink>
     <RouterLink to="/my-events" activeClass="active">My Events</RouterLink>
