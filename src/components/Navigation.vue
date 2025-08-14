@@ -1,9 +1,18 @@
+<script setup>
+import { useRoute } from 'vue-router'
+const route = useRoute()
+function getAriaCurrent(path) {
+  return route === path ? 'page' : null
+}
+
+</script>
 <template>
   <nav>
-    <RouterLink to="/" activeClass="active">All</RouterLink>
-    <RouterLink to="/upcoming" activeClass="active">Upcoming</RouterLink>
-    <RouterLink to="/past-events" activeClass="active">Past Events</RouterLink>
-    <RouterLink to="/my-events" activeClass="active">My Events</RouterLink>
+    <RouterLink to="/" activeClass="active" :aria-current="getAriaCurrent('/')">All</RouterLink>
+    <RouterLink to="/upcoming" activeClass="active" :aria-current="getAriaCurrent('/upcoming')">Upcoming</RouterLink>
+    <RouterLink to="/past-events" activeClass="active" :aria-current="getAriaCurrent('/past-events')">Past Events
+    </RouterLink>
+    <RouterLink to="/my-events" activeClass="active" :aria-current="getAriaCurrent('/my-events')">MyEvents</RouterLink>
   </nav>
 </template>
 
