@@ -1,7 +1,7 @@
 <script setup>
-import Header from './Header.vue'
-import Footer from './Footer.vue'
-import EventsOverview from './EventsOverview.vue'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+import EventsOverview from '@/components/EventsOverview.vue'
 </script>
 
 <template>

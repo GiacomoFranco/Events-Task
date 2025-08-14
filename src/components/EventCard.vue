@@ -1,5 +1,5 @@
 <script setup>
-import Tag from './Tag.vue'
+import Tag from '@/components/Tag.vue';
 import { getImageName, formateDate, formateHour } from '@/utils';
 
 const props = defineProps(['event']);

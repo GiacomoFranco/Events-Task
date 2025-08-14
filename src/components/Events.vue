@@ -1,7 +1,7 @@
 <script setup>
-import EventCard from './EventCard.vue';
-import EmptyList from './EmptyList.vue';
-import EventsMock from '../mocks/mock-data.json';
+import EventCard from '@/components/EventCard.vue';
+import EmptyList from '@/components/EmptyList.vue';
+import EventsMock from '@/mocks/mock-data.json';
 import { filterByTab } from '@/utils/filter';
 
 const props = defineProps(['filter']);
