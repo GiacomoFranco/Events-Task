@@ -1,5 +1,9 @@
+<script setup>
+import UserProfile from './UserProfile.vue'
+</script>
 <template>
   <h1 class="title">Events</h1>
+  <UserProfile />
 </template>
 <style scoped>
 .title {

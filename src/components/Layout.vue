@@ -23,10 +23,15 @@ import EventsOverview from './EventsOverview.vue'
 
 <style lang="scss">
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 7.2rem;
   box-shadow: 4px 0px 12px 0px #60606033;
   padding: .8rem 3.2rem;
   background-color: var(--m-white);
+  position: relative;
+  z-index: 1;
 }
 
 main {
