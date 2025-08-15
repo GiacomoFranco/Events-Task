@@ -11,7 +11,7 @@ const filteredEvents = filterByTab(props.filter, EventsMock.events);
 <template>
   <template v-if="filteredEvents && filteredEvents.length">
     <div class="crowded-list">
-      <EventCard v-for="event in filteredEvents" :event="event" />
+      <EventCard v-for="event in filteredEvents" :event="event" :key="event.id" />
     </div>
   </template>
   <template v-else>

@@ -12,7 +12,7 @@ function getAriaCurrent(path) {
     <RouterLink to="/upcoming" activeClass="active" :aria-current="getAriaCurrent('/upcoming')">Upcoming</RouterLink>
     <RouterLink to="/past-events" activeClass="active" :aria-current="getAriaCurrent('/past-events')">Past Events
     </RouterLink>
-    <RouterLink to="/my-events" activeClass="active" :aria-current="getAriaCurrent('/my-events')">MyEvents</RouterLink>
+    <RouterLink to="/my-events" activeClass="active" :aria-current="getAriaCurrent('/my-events')">My Events</RouterLink>
   </nav>
 </template>
 
@@ -21,7 +21,7 @@ a {
   display: inline-block;
   border-bottom: 1px solid var(--l-gray);
   padding: 0 1.3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 
   &.active {
