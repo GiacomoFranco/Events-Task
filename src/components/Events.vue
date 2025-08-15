@@ -1,11 +1,12 @@
 <script setup>
+import { storeToRefs } from 'pinia';
+import { useGlobalStore } from '@/stores/global';
 import EventCard from '@/components/EventCard.vue';
 import EmptyList from '@/components/EmptyList.vue';
-import EventsMock from '@/mocks/mock-data.json';
-import { filterByTab } from '@/utils/filter';
 
-const props = defineProps(['filter']);
-const filteredEvents = filterByTab(props.filter, EventsMock.events);
+const store = useGlobalStore()
+const { filteredEvents } = storeToRefs(store)
+
 </script>
 
 <template>

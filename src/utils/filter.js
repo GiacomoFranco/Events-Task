@@ -2,9 +2,9 @@ import { parseDate } from './format'
 
 export function filterByTab(tab, events) {
   return events.filter((event) => {
-    if (tab === 'upcoming') return isUpcoming(event.start_time)
-    if (tab === 'past') return isPast(event.start_time)
-    if (tab === 'mine') return false
+    if (tab === 'Upcoming') return isUpcoming(event.start_time)
+    if (tab === 'Past Events') return isPast(event.start_time)
+    if (tab === 'My Events') return false
     return true
   })
 }
